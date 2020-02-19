@@ -18,7 +18,7 @@ class School
     @roster[grade]
   end
   
-  def sorted_list
+  def sort
     sorted_hash = {}
     @roster.sort.each do |name, grade|
       sorted_hash[grade] = grade.sort
